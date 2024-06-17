@@ -15,7 +15,7 @@ namespace LAProyectoMVVM
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
+#if DEBUG   
     		builder.Logging.AddDebug();
 #endif
 
