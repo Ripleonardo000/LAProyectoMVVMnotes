@@ -8,5 +8,10 @@ public partial class LAAllNotesPage : ContentPage
 		InitializeComponent();
         
     }
-   
+
+    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        notesCollection.SelectedItem = null;
+    }
+
 }

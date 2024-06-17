@@ -51,11 +51,15 @@ internal class LANotesViewModel: IQueryAttributable
 
             // If note is found, update it
             if (matchedNote != null)
+            {
                 matchedNote.Reload();
+                AllNotes.Move(AllNotes.IndexOf(matchedNote), 0);
+            }
+               else
+                AllNotes.Insert(0, new LANoteViewModel(Models.LANote.Load(noteId)));
 
-            // If note isn't found, it's new; add it.
-            else
-                AllNotes.Add(new LANoteViewModel(LANote.Load(noteId)));
+
+
         }
     }
 }
