@@ -7,7 +7,6 @@ using CommunityToolkit.Mvvm.Input;
 using LAProyectoMVVM.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using static Android.Provider.ContactsContract.CommonDataKinds;
 
 namespace LAProyectoMVVM.ViewModels;
 
